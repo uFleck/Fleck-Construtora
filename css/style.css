@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    /* background-image: url(../img/wallpaper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: black;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    transition: .3s;
+  }
+  
+  #logo:hover {
+    color: gold
+  }
+  
+  nav {
+    display: flex;
+  align-items: center;
+    justify-content: center;
+  }
+
+  #btn-mobile {
+    display: none;
+  }
+  
+  #menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu li {
+    display: block;
+    margin: 1rem;
+  }
+  
+  #menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: fit-content;
+    border-bottom: transparent 2px solid;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    transition: .4s all;
+  }
+  
+  #menu li a:hover {
+    text-decoration: none;
+    color: gold;
+    /* border-bottom: rgb(255, 217, 0) 2px solid; */
+  }
+  
+  main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 200px;
+  }
+  
+  main p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }  
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    /* background-image: url(../img/wallpaper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: black;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: black;
+  }
+  
+  #logo {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    transition: .3s;
+  }
+  
+  #logo:hover {
+    color: gold
+  }
+  
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #nav.active #hamburguer {
+    border-top: 2px solid transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -7px;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid white;
+    width: 20px;
+    transition: .2s;
+  }
+
+  #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background: white;
+    transition: .3s;
+    position: relative;
+  }
+  
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    padding-left: 0px;
+    height: 0;
+    z-index: 1000;
+    transition: .5s;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: black;
+  }
+
+  #menu a {
+    padding: 1rem .5rem;
+    transition: .3s
+  }
+  
+  #menu li {
+    display: block;
+    border-bottom: 2px solid grey;
+    margin-top: 1rem;
+  }
+
+  #menu li:hover {
+    border-bottom: 2px solid gold;
+  }
+  
+  #menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: fit-content;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    transition: .4s all;
+  }
+  
+  #menu li a:hover {
+    color: gold;
+  }
+  
+  main {
+    height: 90vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  main p {
+    width: 70%;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-galery {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: 350px;
+}
+
+.item-galery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.item-galery:hover .title-galery{
+  position: absolute;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.item-galery .img-galery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.item-galery:hover .img-galery {
+  opacity: 0.5;
+}
+
+.item-galery .title-galery {
+  color: gold;
+  font-size: 20pt;
+  display: none;
+  cursor: pointer;
+}
+
+/* Popup window for images */
+
+.img-window {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.img-window img {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container-galery {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 350px;
+    gap: 10px;
+    z-index: -10;
+  }
+
+  .item-galery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .item-galery:hover .title-galery{
+    position: absolute;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .item-galery .img-galery {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .item-galery:hover .img-galery {
+    opacity: 0.5;
+  }
+
+  .item-galery .title-galery {
+    color: gold;
+    font-size: 20pt;
+    display: none;
+    cursor: pointer;
+  }
+
+  /* Popup window for images */
+
+  .img-window {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+}
