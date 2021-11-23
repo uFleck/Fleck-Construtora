@@ -33,7 +33,7 @@
     margin: 1rem;
     font-family: 'Bebas Neue', cursive;
     transition: .3s;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   
   #logo:hover {
@@ -104,32 +104,7 @@
   }
 
   #imagem {
-    float: left;
-  }
-
-  #name-wrapped p{
-    margin: 0;
-    padding: 0;
-  }
-
-  #name-wrapped #nome {
-    font-size: 2.5rem;
-    color: goldenrod;
-    line-height: 25px;
-    font-family: 'Libre Baskerville', serif;
-  }
-
-  #name-wrapped #complemento {
-    color: white;
-    font-family: 'PT Serif', serif;
-    font-size: 0.8rem;
-  }
-
-  #slogan {
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    margin-top: 100px;
+    height: 350px;
   }
 
   footer {
@@ -325,32 +300,7 @@
   }
 
   #imagem {
-    float: left;
-  }
-
-  #name-wrapped p{
-    margin: 0;
-    padding: 0;
-  }
-
-  #name-wrapped #nome {
-    font-size: 2.5rem;
-    color: goldenrod;
-    line-height: 25px;
-    font-family: 'Libre Baskerville', serif;
-  }
-
-  #name-wrapped #complemento {
-    color: white;
-    font-family: 'PT Serif', serif;
-    font-size: 0.8rem;
-  }
-
-  #slogan {
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    margin-top: 100px;
+    height: 160px;
   }
   
   footer {
@@ -368,11 +318,6 @@
     font-weight: bold;
     font-size: 1.3rem;
     margin: 0;
-  }
-
-  footer img {
-    height: 32px;
-    width: 32px;
   }
 
   #footer-image {
